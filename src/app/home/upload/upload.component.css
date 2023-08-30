@@ -1,0 +1,66 @@
+.container .form-container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.container .form-container .form-header {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.container .form-container .form-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 10px;
+}
+
+.container .form-container .form-body .form-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.container .form-container .form-body .form-group label {
+  width: 150px;
+}
+
+.container .form-container .form-body .form-group .form-control {
+  flex: 1;
+  padding: 4px 4px;
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  background-color: transparent;
+  color: rgba(255,255,255,0.75);
+  outline: none;
+}
+
+.container .form-container .form-body .form-group textarea.form-control {
+  resize: none;
+  height: 250px;
+}
+
+.container .form-container .form-body .form-group input::-moz-placeholder,
+.container .form-container .form-body .form-group textarea::-moz-placeholder {
+  color: darkorange;
+  opacity: 1;
+}
+
+.container .form-container .form-footer {
+  padding: 25px 0;
+  display: flex;
+  width: 100%;
+}
+
+.container .form-container .form-footer .btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.35);
+  margin-right: 20px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: rgba(255,255,255,0.75);
+  cursor: pointer;
+}

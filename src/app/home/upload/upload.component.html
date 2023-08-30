@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="form-container">
+    <form [formGroup]="uploadForm" method="post" enctype="multipart/form-data">
+      <div class="form-header">File Uploads</div>
+      <div class="form-body">
+        <div class="form-group">
+          <label>File Title</label>
+          <input type="text" name="file_title" formControlName="file_title" class="form-control" placeholder="Enter file title">
+        </div>
+        <div class="form-group">
+          <label>File</label>
+          <input type="file" name="filename" formControlName="filename" (change)="onFileSelected($event)" class="form-control" placeholder="Please select file">
+        </div>
+        <div class="form-group">
+          <label>File Content</label>
+          <textarea class="form-control" name="file_content" formControlName="file_content" placeholder="Enter a description about the file..."></textarea>
+        </div>
+      </div>
+      <div class="form-footer">
+        <input type="submit" class="btn btn-upload" value="Upload File" (click)="uploadFile(uploadForm.value)">
+        <button type="reset" class="btn btn-clear">Clear All</button>
+        <button type="button" class="btn btn-cancel">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
